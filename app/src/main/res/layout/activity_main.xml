@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="match_parent"
+                android:padding="3sp"
+>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:id="@+id/top"
+    >
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:id="@+id/ib"
+                   android:layout_alignParentRight="true"
+                   android:layout_alignParentEnd="true"
+                   android:src="@android:drawable/ic_input_add" tools:ignore="ContentDescription"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_below="@id/top"
+                android:id="@+id/sv"
+                android:layout_above="@id/bottom">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:id="@+id/ll" android:orientation="vertical"/>
+    </ScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/bottom"
+                  android:layout_alignParentBottom="true" android:orientation="horizontal"
+                  android:padding="6sp"
+    >
+        <Button android:layout_width="0sp" android:layout_height="wrap_content"
+                android:text="@string/forgetting"
+                android:id="@+id/forget"
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle"/>
+        <Button android:layout_width="0sp" android:layout_height="wrap_content"
+                android:text="@string/have_impression"
+                android:id="@+id/have_impression"
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle"/>
+        <Button android:layout_width="0sp" android:layout_height="wrap_content"
+                android:text="@string/familiar"
+                android:id="@+id/familiar"
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle"/>
+    </LinearLayout>
+</RelativeLayout>

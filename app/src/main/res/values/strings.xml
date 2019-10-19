@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KM</string>
+    <string name="forgetting">忘记</string>
+    <string name="have_impression">有印象</string>
+    <string name="familiar">熟悉</string>
+    <string name="record">记录</string>
+    <string name="recording_success">添加成功</string>
+    <string name="tv">%1$s</string>
+</resources>
