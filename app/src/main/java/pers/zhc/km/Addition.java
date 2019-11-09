@@ -24,6 +24,7 @@ public class Addition extends MainActivity {
             cv.put("t", currentTimeMillis);
             cv.put("content", et.getText().toString());
             cv.put("mark", 2);
+            cv.put("do_t", currentTimeMillis);
             try {
                 db.insertOrThrow("doc", null, cv);
             } catch (SQLException e) {
